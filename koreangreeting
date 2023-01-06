@@ -1,0 +1,12 @@
+function dispalyGreetings(today){
+        hrs = today.getHours();
+        name="Karen"
+        if (hrs < 12)
+            greet = '잘 잤어요  '+name;
+        else if (hrs >= 12 && hrs <= 17)
+            greet = '안녕하세요 '+name;
+        else if (hrs >= 17 && hrs <= 24)
+            greet = '좋은 하루 보내세요  '+name;
+        document.getElementById('greet').innerHTML = greet;
+
+    }
